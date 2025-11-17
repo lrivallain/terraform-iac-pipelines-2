@@ -24,7 +24,7 @@ locals {
     # Features enabled by environment
     features = {
       always_on_webapp     = var.environment != "dev"
-      geo_redundant_backup = var.environment == "prod"
+      geo_redundant_backup = false
       advanced_monitoring  = var.environment == "prod"
     }
 
